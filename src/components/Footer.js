@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaHeart, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaHeart, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,10 +12,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:text-blue-400' },
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub', color: 'hover:text-gray-400' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:text-sky-400' },
-    { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram', color: 'hover:text-pink-400' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/amit-pal-26724a3b7/', label: 'LinkedIn', color: 'hover:text-blue-400' },
+    { icon: FaGithub, href: 'https://github.com/amit0811xp', label: 'GitHub', color: 'hover:text-gray-400' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/share/1E3fCBcAgA/', label: 'Facebook', color: 'hover:text-blue-500' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/amit.pal4713?igsh=M3drMTVnMmVyYXZp', label: 'Instagram', color: 'hover:text-pink-400' },
   ];
 
   return (

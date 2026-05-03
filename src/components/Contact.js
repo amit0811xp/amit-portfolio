@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -68,16 +68,16 @@ const Contact = () => {
             <div className="mt-6 sm:mt-8 fade-in-up" style={{ animationDelay: '0.5s' }}>
               <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-white">Follow Me</h4>
               <div className="flex gap-3 sm:gap-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/amit-pal-26724a3b7/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="LinkedIn">
                   <FaLinkedin className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="GitHub">
+                <a href="https://github.com/amit0811xp" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="GitHub">
                   <FaGithub className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Twitter">
-                  <FaTwitter className="text-lg sm:text-xl text-white" />
+                <a href="https://www.facebook.com/share/1E3fCBcAgA/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Facebook">
+                  <FaFacebook className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Instagram">
+                <a href="https://www.instagram.com/amit.pal4713?igsh=M3drMTVnMmVyYXZp" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Instagram">
                   <FaInstagram className="text-lg sm:text-xl text-white" />
                 </a>
               </div>

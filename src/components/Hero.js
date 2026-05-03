@@ -184,7 +184,7 @@ const Hero = () => {
               <FaGithub className="text-xl text-white group-hover:rotate-12 transition-transform" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/amit-pal-26724a3b7/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-blue-500 transition-all duration-300 transform hover:scale-125 hover:-translate-y-2 group"
