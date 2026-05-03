@@ -20,65 +20,65 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+    <section id="contact" className="py-16 sm:py-20 bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">
           Get In{' '}
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Touch
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
           {/* Contact Info */}
           <div data-aos="fade-right" data-aos-duration="1000">
-            <h3 className="text-2xl font-bold mb-6 fade-in-up">Let's Connect</h3>
-            <p className="text-gray-400 mb-8 fade-in-up hover:text-gray-200 transition-colors duration-300" style={{ animationDelay: '0.1s' }}>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 fade-in-up text-white">Let's Connect</h3>
+            <p className="text-gray-200 mb-6 sm:mb-8 fade-in-up hover:text-white transition-colors duration-300 text-sm sm:text-base leading-relaxed" style={{ animationDelay: '0.1s' }}>
               I'm always open to discussing new projects, creative ideas, or opportunities
               to be part of your vision.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center glass p-4 rounded-lg card-hover zoom-in" style={{ animationDelay: '0.2s' }}>
-                <FaEnvelope className="text-2xl text-purple-400 mr-4 pulse-animation" />
-                <div>
-                  <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white hover:text-purple-400 transition-colors duration-300">your.email@example.com</p>
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center glass p-3 sm:p-4 rounded-lg card-hover zoom-in shadow-lg" style={{ animationDelay: '0.2s' }}>
+                <FaEnvelope className="text-xl sm:text-2xl text-purple-400 mr-3 sm:mr-4 pulse-animation flex-shrink-0" />
+                <div className="min-w-0">
+                  <p className="text-gray-300 text-xs sm:text-sm">Email</p>
+                  <p className="text-white hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base truncate">pal298110@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center glass p-4 rounded-lg card-hover zoom-in" style={{ animationDelay: '0.3s' }}>
-                <FaPhone className="text-2xl text-purple-400 mr-4 pulse-animation" />
+              <div className="flex items-center glass p-3 sm:p-4 rounded-lg card-hover zoom-in shadow-lg" style={{ animationDelay: '0.3s' }}>
+                <FaPhone className="text-xl sm:text-2xl text-purple-400 mr-3 sm:mr-4 pulse-animation flex-shrink-0" />
                 <div>
-                  <p className="text-gray-400 text-sm">Phone</p>
-                  <p className="text-white hover:text-purple-400 transition-colors duration-300">+91 XXXXX XXXXX</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">Phone</p>
+                  <p className="text-white hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">+91 97491 74742</p>
                 </div>
               </div>
 
-              <div className="flex items-center glass p-4 rounded-lg card-hover zoom-in" style={{ animationDelay: '0.4s' }}>
-                <FaMapMarkerAlt className="text-2xl text-purple-400 mr-4 pulse-animation" />
+              <div className="flex items-center glass p-3 sm:p-4 rounded-lg card-hover zoom-in shadow-lg" style={{ animationDelay: '0.4s' }}>
+                <FaMapMarkerAlt className="text-xl sm:text-2xl text-purple-400 mr-3 sm:mr-4 pulse-animation flex-shrink-0" />
                 <div>
-                  <p className="text-gray-400 text-sm">Location</p>
-                  <p className="text-white hover:text-purple-400 transition-colors duration-300">Hyderabad, India</p>
+                  <p className="text-gray-300 text-xs sm:text-sm">Location</p>
+                  <p className="text-white hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">Hyderabad, India</p>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="mt-8 fade-in-up" style={{ animationDelay: '0.5s' }}>
-              <h4 className="text-xl font-semibold mb-4">Follow Me</h4>
-              <div className="flex gap-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12" aria-label="LinkedIn">
-                  <FaLinkedin className="text-xl" />
+            <div className="mt-6 sm:mt-8 fade-in-up" style={{ animationDelay: '0.5s' }}>
+              <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-white">Follow Me</h4>
+              <div className="flex gap-3 sm:gap-4">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="LinkedIn">
+                  <FaLinkedin className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12" aria-label="GitHub">
-                  <FaGithub className="text-xl" />
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="GitHub">
+                  <FaGithub className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12" aria-label="Twitter">
-                  <FaTwitter className="text-xl" />
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Twitter">
+                  <FaTwitter className="text-lg sm:text-xl text-white" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12" aria-label="Instagram">
-                  <FaInstagram className="text-xl" />
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 glass rounded-full flex items-center justify-center hover:bg-purple-500 transition-all duration-300 transform hover:scale-125 hover:rotate-12 shadow-lg" aria-label="Instagram">
+                  <FaInstagram className="text-lg sm:text-xl text-white" />
                 </a>
               </div>
             </div>
@@ -86,54 +86,54 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div data-aos="fade-left" data-aos-duration="1000">
-            <form className="glass p-8 rounded-xl card-hover" onSubmit={handleSubmit}>
-              <div className="mb-6">
-                <label className="block text-gray-400 mb-2">Your Name</label>
+            <form className="glass p-5 sm:p-8 rounded-xl card-hover shadow-2xl" onSubmit={handleSubmit}>
+              <div className="mb-4 sm:mb-6 fade-in-up" style={{ animationDelay: '0.1s' }}>
+                <label className="block text-gray-300 mb-2 text-sm sm:text-base">Your Name</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 transition text-white"
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all duration-300 text-white transform hover:scale-105 text-sm sm:text-base"
                   placeholder="John Doe"
                   required
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-gray-400 mb-2">Your Email</label>
+              <div className="mb-4 sm:mb-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <label className="block text-gray-300 mb-2 text-sm sm:text-base">Your Email</label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 transition text-white"
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all duration-300 text-white transform hover:scale-105 text-sm sm:text-base"
                   placeholder="john@example.com"
                   required
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-gray-400 mb-2">Subject</label>
+              <div className="mb-4 sm:mb-6 fade-in-up" style={{ animationDelay: '0.3s' }}>
+                <label className="block text-gray-300 mb-2 text-sm sm:text-base">Subject</label>
                 <input
                   type="text"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 transition text-white"
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all duration-300 text-white transform hover:scale-105 text-sm sm:text-base"
                   placeholder="Project Discussion"
                   required
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-gray-400 mb-2">Message</label>
+              <div className="mb-4 sm:mb-6 fade-in-up" style={{ animationDelay: '0.4s' }}>
+                <label className="block text-gray-300 mb-2 text-sm sm:text-base">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500 transition text-white"
+                  className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500 transition-all duration-300 text-white transform hover:scale-105 text-sm sm:text-base resize-none"
                   placeholder="Your message here..."
                   required
                 ></textarea>
@@ -141,7 +141,8 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full glow-btn bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-lg font-semibold"
+                className="w-full glow-btn glow-pulse bg-gradient-to-r from-purple-500 to-pink-500 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transform hover:scale-105 transition-all duration-300 fade-in-up text-white shadow-lg text-sm sm:text-base"
+                style={{ animationDelay: '0.5s' }}
               >
                 Send Message
               </button>

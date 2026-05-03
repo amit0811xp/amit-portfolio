@@ -38,46 +38,46 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-800">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+    <section id="projects" className="py-16 sm:py-20 bg-gray-800">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">
           My{' '}
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Projects
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass rounded-xl overflow-hidden card-hover bounce-in"
+              className="glass rounded-xl overflow-hidden card-hover bounce-in shadow-2xl"
               data-aos="zoom-in"
               data-aos-delay={index * 100}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center transition-all duration-500 hover:scale-110`}>
-                <project.icon className="text-6xl text-white opacity-50 float-animation hover:opacity-100 transition-opacity duration-300" />
+              <div className={`h-40 sm:h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center transition-all duration-500 hover:scale-110`}>
+                <project.icon className="text-5xl sm:text-6xl text-white opacity-60 float-animation hover:opacity-100 transition-opacity duration-300 drop-shadow-2xl" />
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 hover:text-purple-400 transition-colors duration-300">{project.title}</h3>
-                <p className="text-gray-400 mb-4 hover:text-gray-200 transition-colors duration-300">{project.description}</p>
+              <div className="p-5 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 text-white hover:text-purple-400 transition-colors duration-300">{project.title}</h3>
+                <p className="text-gray-300 mb-4 hover:text-gray-100 transition-colors duration-300 text-sm sm:text-base leading-relaxed">{project.description}</p>
                 <div className="flex gap-2 mb-4 flex-wrap">
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className={`px-3 py-1 ${project.tagColors[idx]} bg-opacity-20 rounded-full text-sm hover:bg-opacity-40 transition-all duration-300 transform hover:scale-110 cursor-pointer`}
+                      className={`px-2 sm:px-3 py-1 ${project.tagColors[idx]} bg-opacity-30 rounded-full text-xs sm:text-sm hover:bg-opacity-50 transition-all duration-300 transform hover:scale-110 cursor-pointer text-white font-medium`}
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-all duration-300 flex items-center transform hover:scale-110 hover:translate-x-1">
+                <div className="flex gap-4 flex-wrap">
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-all duration-300 flex items-center transform hover:scale-110 hover:translate-x-1 text-sm sm:text-base font-medium">
                     <FaExternalLinkAlt className="mr-2" />
                     Live Demo
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-all duration-300 flex items-center transform hover:scale-110 hover:translate-x-1">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-all duration-300 flex items-center transform hover:scale-110 hover:translate-x-1 text-sm sm:text-base font-medium">
                     <FaGithub className="mr-2" />
                     Code
                   </a>

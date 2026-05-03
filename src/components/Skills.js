@@ -30,35 +30,35 @@ const Skills = () => {
   }, [animated]);
 
   return (
-    <section id="skills" className="py-20 bg-gray-800">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+    <section id="skills" className="py-16 sm:py-20 bg-gray-800">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">
           My{' '}
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Skills
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              className="glass p-6 rounded-xl card-hover zoom-in"
+              className="glass p-5 sm:p-6 rounded-xl card-hover zoom-in"
               data-aos="flip-left"
               data-aos-delay={index * 100}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center mb-4">
-                <skill.icon className={`text-4xl ${skill.color} mr-4 shake-animation transition-transform duration-300 hover:scale-125 hover:rotate-12`} />
-                <h3 className="text-xl font-semibold">{skill.name}</h3>
+                <skill.icon className={`text-3xl sm:text-4xl ${skill.color} mr-3 sm:mr-4 shake-animation transition-transform duration-300 hover:scale-125 hover:rotate-12 drop-shadow-lg`} />
+                <h3 className="text-lg sm:text-xl font-semibold text-white">{skill.name}</h3>
               </div>
-              <div className="h-2.5 bg-gray-700 rounded-full overflow-hidden mb-2">
+              <div className="h-2.5 bg-gray-700 rounded-full overflow-hidden mb-2 shadow-inner">
                 <div
-                  className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-1500 ease-out"
+                  className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transition-all duration-1500 ease-out shadow-lg"
                   style={{ width: animated ? `${skill.progress}%` : '0%' }}
                 ></div>
               </div>
-              <p className="text-gray-400 text-sm font-semibold">{skill.progress}%</p>
+              <p className="text-gray-300 text-sm font-semibold">{skill.progress}%</p>
             </div>
           ))}
         </div>

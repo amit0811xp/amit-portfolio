@@ -30,9 +30,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">
+    <section id="education" className="py-16 sm:py-20 bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">
           My{' '}
           <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Education
@@ -47,41 +47,41 @@ const Education = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="mb-12 flex flex-col md:flex-row items-center"
+                className="mb-8 sm:mb-12 flex flex-col md:flex-row items-center"
                 data-aos={edu.side === 'left' ? 'fade-right' : 'fade-left'}
                 data-aos-duration="1000"
               >
                 {edu.side === 'left' ? (
                   <>
-                    <div className="md:w-5/12 md:text-right md:pr-8">
-                      <div className="glass p-6 rounded-xl card-hover slide-in-left" style={{ animationDelay: `${index * 0.2}s` }}>
-                        <h3 className="text-2xl font-bold mb-2 hover:text-purple-400 transition-colors duration-300">{edu.title}</h3>
-                        <p className="text-purple-400 mb-2 font-semibold">{edu.year}</p>
-                        <p className="text-gray-300 hover:text-white transition-colors duration-300">{edu.institution}</p>
-                        <p className="text-gray-400 mt-2 hover:text-gray-200 transition-colors duration-300">{edu.description}</p>
+                    <div className="w-full md:w-5/12 md:text-right md:pr-8 mb-4 md:mb-0">
+                      <div className="glass p-5 sm:p-6 rounded-xl card-hover slide-in-left shadow-xl" style={{ animationDelay: `${index * 0.2}s` }}>
+                        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white hover:text-purple-400 transition-colors duration-300">{edu.title}</h3>
+                        <p className="text-purple-400 mb-2 font-semibold text-sm sm:text-base">{edu.year}</p>
+                        <p className="text-gray-200 hover:text-white transition-colors duration-300 text-sm sm:text-base">{edu.institution}</p>
+                        <p className="text-gray-300 mt-2 hover:text-gray-100 transition-colors duration-300 text-sm sm:text-base">{edu.description}</p>
                       </div>
                     </div>
                     <div className="hidden md:flex w-2/12 justify-center">
-                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center pulse-animation hover:scale-125 transition-transform duration-300">
-                        <edu.icon className="text-white" />
+                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center pulse-animation hover:scale-125 transition-transform duration-300 shadow-lg">
+                        <edu.icon className="text-white text-sm" />
                       </div>
                     </div>
-                    <div className="md:w-5/12"></div>
+                    <div className="hidden md:block md:w-5/12"></div>
                   </>
                 ) : (
                   <>
-                    <div className="md:w-5/12"></div>
+                    <div className="hidden md:block md:w-5/12"></div>
                     <div className="hidden md:flex w-2/12 justify-center">
-                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center pulse-animation hover:scale-125 transition-transform duration-300">
-                        <edu.icon className="text-white" />
+                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center pulse-animation hover:scale-125 transition-transform duration-300 shadow-lg">
+                        <edu.icon className="text-white text-sm" />
                       </div>
                     </div>
-                    <div className="md:w-5/12 md:pl-8">
-                      <div className="glass p-6 rounded-xl card-hover slide-in-right" style={{ animationDelay: `${index * 0.2}s` }}>
-                        <h3 className="text-2xl font-bold mb-2 hover:text-purple-400 transition-colors duration-300">{edu.title}</h3>
-                        <p className="text-purple-400 mb-2 font-semibold">{edu.year}</p>
-                        <p className="text-gray-300 hover:text-white transition-colors duration-300">{edu.institution}</p>
-                        <p className="text-gray-400 mt-2 hover:text-gray-200 transition-colors duration-300">{edu.description}</p>
+                    <div className="w-full md:w-5/12 md:pl-8">
+                      <div className="glass p-5 sm:p-6 rounded-xl card-hover slide-in-right shadow-xl" style={{ animationDelay: `${index * 0.2}s` }}>
+                        <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white hover:text-purple-400 transition-colors duration-300">{edu.title}</h3>
+                        <p className="text-purple-400 mb-2 font-semibold text-sm sm:text-base">{edu.year}</p>
+                        <p className="text-gray-200 hover:text-white transition-colors duration-300 text-sm sm:text-base">{edu.institution}</p>
+                        <p className="text-gray-300 mt-2 hover:text-gray-100 transition-colors duration-300 text-sm sm:text-base">{edu.description}</p>
                       </div>
                     </div>
                   </>
